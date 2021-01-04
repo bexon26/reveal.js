@@ -1,40 +1,249 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>What is React JS</h1>
+				<ul>
+					<li>
+						<p>React is a JavaScript library </br>that is used to build user interface.</p>
+					</li>
+					<li>
+						<p>React was originally intended for the web, for building websites, but later the React Native
+							platform
+							appeared, which was already intended for mobile devices.</p>
+					</li>
+					<li>
+						<p>React presents the perfect tool for building scalable web applications.</p>
+					</li>
+				</ul>
+
+			</section>
+			<section>
+				<h1>Virtual DOM</h1>
+				<ul>
+					<li>
+						<p>The entire structure of a web page can be represented using the DOM (Document Object Model) - an
+							organization of html elements that we can manipulate, modify, delete or add new ones.</p>
+					</li>
+					<li>
+						<p>JavaScript is used to interact with the DOM.</p>
+					</li>
+					<li>
+						<p>The virtual DOM represents a lightweight copy of the regular DOM. And a distinctive feature of
+							React is
+							that this library works with the virtual DOM, and not the usual one.</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Virtual DOM</h1>
+				<ul>
+					<li>
+						<p>If an application needs to know information about the state of elements, then the virtual DOM is
+							accessed.</p>
+					</li>
+					<li>
+						<p>If elements of a web page need to be changed, the changes are first made to the virtual DOM. Then
+							the new
+							state of the virtual DOM is compared with the current state. And if these states are different,
+							then
+							React finds the minimum amount of manipulation that is necessary before updating the real DOM to a
+							new
+							state and performs them.</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Other features of React</h1>
+				<ul>
+					<li>
+						<p>we can create individual components and then easily transfer them from project to project.</p>
+					</li>
+					<li>
+						<p>we use JSX</p>
+					</li>
+					<li>
+						<p>JSX represents a combination of JavaScript and XML code and provides a simple and intuitive way
+							to define the visual interface code.</p>
+					</li>
+					<li>
+						<p>also to compile the code, we need the Babel compiler, which allows us to work with the code
+							according to
+							the standard
+							ES6 (ES2015).</p>
+					</li>
+					<li>
+						<p>Project template engines are available.</p>
+					</li>
+				</ul>
+
+			</section>
+			<section>
+				<h1>Other features of React</h1>
+				<ul>
+					<li>
+						<p>The concept of View from MVC is used.</p>
+					</li>
+					<li>
+						<p>React allows you to create interfaces. In the well-known pattern Model-View-Controller React is
+							closest
+							to the user. It is responsible for presenting data, receiving and processing user input. Where and
+							in
+							what form you store data, how you communicate with the storage, is your business. React is just a
+							View of
+							your application.</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Other features of React</h1>
+				<ul>
+					<li>
+						<p>React is built on the reactive programming paradigm. This declarative approach suggests describing
+							data as a set of statements or formulas. Changing one of the parameters leads to an automatic
+							recalculation of all dependencies</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1> Beginning of work</h1>
+				<ul>
+					<li>
+						<p>The ReactDOM.render () method is used to render an element on a web page, which takes two
+							parameters.</p>
+					</li>
+					<li>
+						<p>The first parameter represents the component that we want to display on the web page. In this case,
+							this
+							is a normal title.</p>
+					</li>
+					<li>
+						<p>This method is passed the element to add to the web page. The second parameter is the element of
+							the web
+							page in which the component from the first parameter will be rendered. In this case, this is the
+						<div id="app"> element.</p>
+					</li>
+					<li>
+						<p>This is exactly the element where the title will be placed.</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1> Setup</h1>
+				<ul>
+					<li>
+						<p>There are several ways to use React.</p>
+					</li>
+					<li>
+						<p>The officially recommended way is from npm or Facebook CDN, but additionally you can clone from git
+							and
+							create your own builds.</p>
+					</li>
+					<li>
+						<p>Alternatively, you can use the starter kit or save time with the Yeoman Application Framework
+							Generator.</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Using CDN for Facebook</h1>
+				<ul>
+					<li>
+						<p>For quick access, simply link the React and React Dom libraries from the fb.me CDN as follows:</p>
+			<pre>
+<code>
+	<script src="https://fb.me/react-0.14.0.js"> </script>
+	<script src="https://fb.me/react-dom-0.14.0.js"> </script>
+</code>
+</pre>
+
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Installing from NPM</h1>
+				<ul>
+					<li>
+						<p>The React manual also recommends using the react and react-dom npm packages. To install them on
+							your
+							system, run the following command on the bash command line in your project directory, or first
+							create a
+							new directory and cd into it.</p>
+					</li>
+					<li>
+						<p>$ npm install --save react react-dom
+							$ browserify -t babelify main.js -o bundle.js
+
+							You should now be able to see the React installation inside the node_modules directory.</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1> What is JSX?</h1>
+				<ul>
+					<li>
+						<p>JSX is an XML / HTML syntax that is used to render HTML from JavaScript code. React
+							converts JSX to native JavaScript for the browser and with the provided tools you can
+							convert HTML code of existing sites to JSX</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1> What is JSX?</h1>
+				<ul>
+					<li>
+						<p>JSX makes it easier to write code because it is very similar to writing familiar HTML, but only
+							from
+							within JavaScript. When combined with Node, this provides a very consistent workflow.</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1> What is JSX?</h1>
+				<ul>
+					<li>
+						<p>JSX is an XML / HTML syntax that is used to render HTML from JavaScript code. React
+							converts JSX to native JavaScript for the browser and with the provided tools you can
+							convert HTML code of existing sites to JSX</p>
+					</li>
+				</ul>
+
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
